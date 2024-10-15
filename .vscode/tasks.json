@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "Generate JSDoc",
+          "type": "shell",
+          "command": "npm",
+          "args": ["run", "docs"],
+          "problemMatcher": [],
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          },
+          "isBackground": true,
+          "presentation": {
+              "reveal": "always",
+              "panel": "shared",
+              "showReuseMessage": false
+          },
+          "runOptions": {
+              "runOn": "folderOpen"
+          }
+      }
+  ]
+}

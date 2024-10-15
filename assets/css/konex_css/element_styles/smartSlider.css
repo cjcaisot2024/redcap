@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.n2-ss-slider-controls-absolute-left-center > .n2-ss-widget {
+  border-radius: 0 50px 50px 0;
+}
+
+.n2-ss-slider-controls-absolute-right-center > .n2-ss-widget {
+  border-radius: 50px 0 0 50px;
+}
+
+.n2-ss-slider-controls-absolute-left-center > .n2-ss-widget,
+.n2-ss-slider-controls-absolute-right-center > .n2-ss-widget {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: var(--widget-offset);
+  padding-right: var(--widget-offset);
+  margin: 0 !important;
+}
+
+.n2-ss-slider-controls-absolute-left-center > .n2-ss-widget:hover,
+.n2-ss-slider-controls-absolute-right-center > .n2-ss-widget:hover {
+  background: rgba(63, 81, 181, 0.0705882353);
+}
+
+/* añade contador a los dots */
+.bullet-counter .nextend-bullet-bar {
+  counter-reset: bullet-counter;
+  position: relative;
+  bottom: 5rem;
+}
+
+.bullet-counter .nextend-bullet-bar [class*=n2-bullet]::before {
+  content: counter(bullet-counter);
+  display: block !important;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bullet-counter .nextend-bullet-bar [class*=n2-bullet] {
+  counter-increment: bullet-counter;
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
+  visibility: initial;
+  height: 32px;
+  padding: 0 2rem !important;
+  border-radius: 10px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ss3-force-full-width {
+  width: 100vw !important;
+}/*# sourceMappingURL=smartSlider.css.map */

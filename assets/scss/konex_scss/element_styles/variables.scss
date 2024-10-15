@@ -1,0 +1,53 @@
+:root {
+  --value-margin-top-bottom: 8.75rem;
+  --value-top-bottom: 2rem;
+  --separator-content: var(--value-top-bottom) var(--value-left-right);
+  // Primary, Secondary, Tertiary Colors
+  --color-primary: #03134a;
+  --color-secondary: #024d9c;
+  --color-secondary-ligth: #e1f0ff;
+  --color-secondary-disabled: #b4d8fe;
+  --color-tertiary: #008ed4;
+  // Additional Levels
+  --color-quaternary: #fafafa;
+  // Colores neutrales
+  --color-white: white;
+  --color-black: black;
+  --color-gray-light: #f0f0f0;
+  --color-medium-gray-light: #cccccc;
+  --color-medium-gray: #999999;
+  --color-gray-dark: #333333;
+  --color-medium-gray-dark: #666666;
+  // Success
+  --color-primary-success: #2ecc71;
+  --color-secondary-success: #27ae60;
+  // Info
+  --color-primary-info: #3498db;
+  --color-secondary-info: #2980b9;
+  // Warning
+  --color-primary-warning: #f1c40f;
+  --color-secondary-warning: #f39c12;
+  // Error
+  --color-primary-error: #e74c3c;
+  --color-secondary-error: #c0392b;
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.color-secondary-disabled {
+  color: var(--color-secondary-disabled);
+}
+
+.color-tertiary {
+  color: var(--color-tertiary);
+}
+
+.color-quaternary {
+  color: var(--color-quaternary);
+}

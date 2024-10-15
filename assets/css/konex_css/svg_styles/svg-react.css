@@ -1,0 +1,8 @@
+.svgReact .ellipse {
+  stroke: #78d0fe;
+  stroke-width: 5px;
+}
+
+.svgReact .circle {
+  fill: #78d0fe;
+}

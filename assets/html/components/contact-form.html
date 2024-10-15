@@ -1,0 +1,69 @@
+<form id="contactForm">
+  <div class="grid gap-10">
+    <h2 class="section-title">¿Tienes alguna pregunta?</h2>
+    <div class="flex-column">
+      <label for="name" class="section-text-small"
+        >Nombre completo <strong class="required">*</strong></label
+      >
+      <input id="name" type="text" name="name" required class="input-style font-xs-16" />
+      <span class="error-message" id="nameError"></span>
+    </div>
+    <div class="flex-column">
+      <label for="email" class="section-text-small"
+        >Correo <strong class="required">*</strong></label
+      >
+      <input
+        id="email"
+        type="email"
+        name="email"
+        required
+        class="input-style font-xs-16"
+      />
+      <span class="error-message" id="emailError"></span>
+    </div>
+    <div class="flex-column">
+      <label for="phone" class="section-text-small"
+        >Número de celular <strong class="required">*</strong></label
+      >
+      <input
+        id="phone"
+        type="tel"
+        name="phone"
+        required
+        pattern="[0-9]{10}"
+        class="input-style font-xs-16"
+      />
+      <span class="error-message" id="phoneError"></span>
+    </div>
+    <div class="flex-column">
+      <label for="comments" class="section-text-small"
+        >¿Cuál es el Motivo por el cual nos contacta?
+        <strong class="required">*</strong></label
+      >
+      <textarea id="comments" name="comments" required class="font-xs-16"></textarea>
+      <span class="error-message" id="commentsError"></span>
+    </div>
+    <div class="flex-column">
+      <label for="acept" class="section-text-small flex gap-10">
+        <label for="acept" class="checkmark">
+          <div class="content-check"></div>
+          <input type="checkbox" id="acept" class="input-check font-xs-16" />
+        </label>
+        He leído y acepto la Política de tratamiento de datos personales y los
+        Términos y condiciones.
+      </label>
+    </div>
+    <div class="flex-column">
+      <button type="submit" class="button-text form-button font-xs-16">
+        Enviar mensaje
+      </button>
+    </div>
+  </div>
+</form>
+
+<style>
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+</style>

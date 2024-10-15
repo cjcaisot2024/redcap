@@ -1,0 +1,133 @@
+.wp-block {
+  outline: 1px solid red;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.max-w-100 {
+  max-width: 100%;
+}
+
+.k-p-t-2 {
+  padding-top: 2rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.p-h-24 {
+  padding-left: 24Px;
+  padding-right: 24Px;
+}
+
+.p-v-16 {
+  padding-top: 16Px;
+  padding-bottom: 16Px;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-l-0 {
+  padding-left: 0;
+}
+
+.p-r-0 {
+  padding-right: 0;
+}
+
+.p-l-r-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.p-t-0 {
+  padding-top: 0;
+}
+
+.p-b-0 {
+  padding-bottom: 0;
+}
+
+.p-t-b-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.corner {
+  border-radius: 3.9rem;
+}
+
+.corner-small {
+  border-radius: 0.9rem;
+}
+
+.corner-top-right {
+  border-top-right-radius: 3.9rem;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}/*# sourceMappingURL=classUtilities.css.map */

@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'konexIcon';
+  src:  url('fonts/konexIcon.eot?6tszh0');
+  src:  url('fonts/konexIcon.eot?6tszh0#iefix') format('embedded-opentype'),
+    url('fonts/konexIcon.ttf?6tszh0') format('truetype'),
+    url('fonts/konexIcon.woff?6tszh0') format('woff'),
+    url('fonts/konexIcon.svg?6tszh0#konexIcon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon_"], [class*=" icon_"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'konexIcon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_facebook:before {
+  content: "\e916";
+}
+.icon_arrow_fill_right:before {
+  content: "\e911";
+}
+.icon_arrow_fill_left:before {
+  content: "\e912";
+}
+.icon_distance:before {
+  content: "\e913";
+}
+.icon_call:before {
+  content: "\e914";
+}
+.icon_mail:before {
+  content: "\e915";
+}
+.icon_arrow_right:before {
+  content: "\e90f";
+}
+.icon_arrow_left:before {
+  content: "\e910";
+}
+.icon_mision:before {
+  content: "\e90d";
+}
+.icon_x_twitter:before {
+  content: "\e90e";
+}
+.icon_collection:before {
+  content: "\e907";
+}
+.icon_delivery:before {
+  content: "\e908";
+}
+.icon_digital_loans:before {
+  content: "\e909";
+}
+.icon_electronic_wallet:before {
+  content: "\e90a";
+}
+.icon_payment_gateway:before {
+  content: "\e90b";
+}
+.icon_soat:before {
+  content: "\e90c";
+}
+.icon_turns:before {
+  content: "\e906";
+}
+.icon_values:before {
+  content: "\e902";
+}
+.icon_mission:before {
+  content: "\e903";
+}
+.icon_vision:before {
+  content: "\e904";
+}
+.icon_local_phone:before {
+  content: "\e900";
+}
+.icon_pin_drop:before {
+  content: "\e901";
+}
+.icon_menu:before {
+  content: "\e905";
+}
+.icon_instagram:before {
+  content: "\ea92";
+}
+.icon_youtube:before {
+  content: "\ea9d";
+}
+.icon_linkedin:before {
+  content: "\eac9";
+}

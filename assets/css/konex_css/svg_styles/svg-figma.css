@@ -1,0 +1,24 @@
+.one {
+  fill: #f24e1e;
+}
+
+.svgFigma .two {
+  fill: #ff7262;
+}
+
+.svgFigma .three {
+  fill: #a259ff;
+}
+
+.svgFigma .four {
+  fill: #1abcfe;
+}
+
+.svgFigma .five {
+  fill: #0acf83;
+}
+
+.svgFigma rect {
+  width: 15px;
+  height: 31px;
+}

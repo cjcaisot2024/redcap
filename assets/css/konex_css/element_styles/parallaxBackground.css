@@ -1,0 +1,333 @@
+.banner,
+svg.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.adjust-svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adjust-svg svg {
+  min-width: 100px;
+  max-width: 500px;
+  width: 75%;
+  height: auto;
+}
+
+/* primer estado */
+body[parallaxstate=first-parallax] .virtual-polygon {
+  /* transform: translate(calc(50% - 158px), 0vh); */
+}
+
+body[parallaxstate=first-parallax] .virtual-polygon {
+  opacity: 0.05;
+}
+
+body[parallaxstate=first-parallax] .virtual-polygon path {
+  -webkit-transform: initial;
+          transform: initial;
+}
+
+/* estado default */
+.virtual-polygon {
+  /* transform-origin: center right; */
+}
+
+.virtual-polygon > g {
+  /* transform: rotate3d(0, 1, 0, 70deg); */
+  /* transform-box: content-box; */
+  /* transform-origin: center center; */
+}
+
+/* estado desplegado */
+body[parallaxstate=second-parallax] .virtual-polygon {
+  /* transform: translate(calc(48% - 158px), 0vh); */
+}
+
+.first-plygon {
+  fill: #008ed4;
+  -webkit-transform: translate3d(-19rem, 0rem, 0rem);
+          transform: translate3d(-19rem, 0rem, 0rem);
+}
+
+.second-polygon {
+  stroke: #b4d8fe;
+  -webkit-transform: translate3d(-12rem, 0rem, 0rem);
+          transform: translate3d(-12rem, 0rem, 0rem);
+}
+
+.third-polygon {
+  stroke: #024d9c;
+  -webkit-transform: translate3d(-6.8rem, 0rem, 0rem);
+          transform: translate3d(-6.8rem, 0rem, 0rem);
+}
+
+.line-dash-polygon {
+  stroke: #fafafa;
+  -webkit-transform: translate3d(-5.8rem, 0rem, 0rem);
+          transform: translate3d(-5.8rem, 0rem, 0rem);
+}
+
+.line-first-polygon {
+  stroke: #008ed4;
+  -webkit-transform: translate3d(-3.8rem, 0rem, 0rem);
+          transform: translate3d(-3.8rem, 0rem, 0rem);
+}
+
+.line-second-polygon {
+  stroke: #d9d9d9;
+  -webkit-transform: translate3d(-2.8rem, 0rem, 0rem);
+          transform: translate3d(-2.8rem, 0rem, 0rem);
+}
+
+.line-fourth-polygon {
+  stroke: #fafafa;
+  -webkit-transform: translate3d(-1.8rem, 0rem, 0rem);
+          transform: translate3d(-1.8rem, 0rem, 0rem);
+}
+
+.line-fifth-polygon {
+  stroke: #d9d9d9;
+  /* transform: translate3d(1.2rem, 0rem, 0rem); */
+}
+
+/* tercer estado */
+body[parallaxstate=third-parallax] .virtual-polygon {
+  /* transform: translate(calc(35% - 158px), 0vh); */
+}
+
+body[parallaxstate=third-parallax] .virtual-polygon > g {
+  /* transform: rotate3d(0, 0, 0, 70deg); */
+}
+
+/* cuarto estado */
+body[parallaxstate=fourth-parallax] .virtual-polygon {
+  /* transform: translate(calc(44% - 158px), 0vh); */
+}
+
+body[parallaxstate=fourth-parallax] .virtual-polygon > g {
+  /* transform: translate(-18vw, 22vh) rotate3d(1.5, 1, 2, -75deg); */
+}
+
+body[parallaxstate*=fourth-parallax] .first-plygon {
+  -webkit-transform: translate3d(0rem, 0rem, 0rem);
+          transform: translate3d(0rem, 0rem, 0rem);
+}
+
+body[parallaxstate*=fourth-parallax] .second-polygon {
+  -webkit-transform: translate3d(0rem, 0rem, 0rem);
+          transform: translate3d(0rem, 0rem, 0rem);
+}
+
+body[parallaxstate*=fourth-parallax] .third-polygon {
+  -webkit-transform: translate3d(0.2rem, 0rem, 0rem);
+          transform: translate3d(0.2rem, 0rem, 0rem);
+}
+
+body[parallaxstate*=fourth-parallax] .line-dash-polygon {
+  -webkit-transform: translate3d(1rem, 0rem, 0rem);
+          transform: translate3d(1rem, 0rem, 0rem);
+}
+
+body[parallaxstate*=fourth-parallax] .line-first-polygon {
+  -webkit-transform: translate3d(1rem, 0rem, 0rem);
+          transform: translate3d(1rem, 0rem, 0rem);
+}
+
+body[parallaxstate*=fourth-parallax] .line-second-polygon {
+  -webkit-transform: translate3d(1rem, 0rem, 0rem);
+          transform: translate3d(1rem, 0rem, 0rem);
+}
+
+body[parallaxstate*=fourth-parallax] .line-fourth-polygon {
+  -webkit-transform: translate3d(1rem, 0rem, 0rem);
+          transform: translate3d(1rem, 0rem, 0rem);
+}
+
+body[parallaxstate*=fourth-parallax] .line-fifth-polygon {
+  -webkit-transform: translate3d(1.2rem, 0rem, 0rem);
+          transform: translate3d(1.2rem, 0rem, 0rem);
+}
+
+/* texto del parallax */
+.foreign-content {
+  color: white;
+  padding: var(--separator-content);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  width: 60%;
+  margin: 5rem auto 0 0;
+}
+
+.foreign-content :nth-child(n) {
+  margin: 0;
+}
+
+foreignObject {
+  width: 100%;
+  height: 100%;
+  x: 0;
+}
+
+.background-parallax {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #03134a;
+}
+
+.background-parallax:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--svg-image-stars);
+  background-size: min(100%, 50% + var(--scrollY) * 7%);
+  background-position: center calc(var(--scrollY) * 1px);
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: min(100%, 20% + var(--scrollY) * 7%);
+}
+
+.background-parallax:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--svg-image-polygons);
+  background-size: 150vh min(100%, 80% + var(--scrollY) * 7%);
+  background-position: left calc(var(--scrollY) / 100 * -8vh);
+  background-repeat: no-repeat;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  mix-blend-mode: color-dodge;
+  opacity: min(100%, -60% + var(--scrollY) * 7%);
+}
+
+/*para activar solo cuando hay parallax*/
+body[parallaxstate]:not([parallaxstate*=endParallax]) #headerContent:not(.show-menu) [class*=header-content] {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.logo1 {
+  display: none;
+}
+
+body[parallaxstate]:not([parallaxstate*=endParallax]) #headerContent:not(.show-menu) .logo1 {
+  display: block;
+}
+
+body[parallaxstate]:not([parallaxstate*=endParallax]) #headerContent:not(.show-menu) .header-list a {
+  color: white;
+}
+
+foreignObject svg {
+  width: max(90%, min(50% + 20vw, 1rem));
+  max-height: 60%;
+  height: 100%;
+  margin: auto;
+}
+
+.content-svg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.banner.parallax:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(113deg, rgba(0, 0, 0, 0.6509803922) 45%, rgba(0, 0, 0, 0.6509803922) 40%, transparent);
+  z-index: 1;
+  opacity: min(100%, -80% + var(--scrollY) * 7%);
+}
+
+.banner-parallax {
+  opacity: min(100%, 5% + var(--scrollY) * 7%);
+}
+
+[parallaxstate*=hide-header] header {
+  position: relative;
+  opacity: 0;
+}
+
+svg.objet :nth-child(n) {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+[parallaxstate*=dashStroke] .objet path {
+  -webkit-animation: draw 2s cubic-bezier(1, 0.58, 0, 0.34) none 1;
+          animation: draw 2s cubic-bezier(1, 0.58, 0, 0.34) none 1;
+}
+
+.parallax .button-section {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+@-webkit-keyframes draw {
+  0% {
+    stroke-dashoffset: 1500; /* Comienza fuera de vista */
+  }
+  50% {
+    stroke-dashoffset: 0; /* Trazo completo */
+    stroke-dasharray: 100;
+    stroke-width: 5;
+    fill: transparent;
+    stroke: rgba(0, 145, 207, 0.5294117647);
+  }
+  100% {
+    stroke-dashoffset: -1500; /* Comienza de nuevo desde el principio */
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1500; /* Comienza fuera de vista */
+  }
+  50% {
+    stroke-dashoffset: 0; /* Trazo completo */
+    stroke-dasharray: 100;
+    stroke-width: 5;
+    fill: transparent;
+    stroke: rgba(0, 145, 207, 0.5294117647);
+  }
+  100% {
+    stroke-dashoffset: -1500; /* Comienza de nuevo desde el principio */
+  }
+}/*# sourceMappingURL=parallaxBackground.css.map */

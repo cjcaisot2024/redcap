@@ -1,0 +1,17 @@
+.grid-colaborators .data-svg:not(:hover) .svgStarplay .background {
+ visibility: hidden;
+}
+
+.svgStarplay .bg1 {
+    fill: #142142;
+}
+
+.svgStarplay .bg2 {
+    fill: #D42E12;
+}
+
+.svgStarplay .text,
+.svgStarplay .star,
+.svgStarplay .face {
+    fill: white;
+}

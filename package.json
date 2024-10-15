@@ -1,0 +1,25 @@
+{
+  "name": "theme_konex_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "docs": "cross-env jsdoc -c jsdoc.json",
+    "watch-docs": "cross-env nodemon --watch assets --ext js --exec 'npm run docs'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@pixi/jsdoc-template": "^2.6.0",
+    "clean-jsdoc-theme": "^4.3.0",
+    "cross-env": "^7.0.3",
+    "jsdoc": "^4.0.3",
+    "nodemon": "^3.1.4",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "docdash": "^2.0.2",
+    "tui-jsdoc-template": "^1.2.2"
+  }
+}

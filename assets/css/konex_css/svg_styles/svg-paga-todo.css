@@ -1,0 +1,19 @@
+.svgPagaTodo .shadow {
+    fill: #201A1B;
+}
+
+.svgPagaTodo  .text {
+    fill: #E1181E;
+}
+
+.svgPagaTodo  .dollar {
+    fill: white;
+}
+
+.svgPagaTodo .star-stroke {
+    fill: #ECA108;
+}
+
+.svgPagaTodo .star {
+    fill: #FFD802;
+}

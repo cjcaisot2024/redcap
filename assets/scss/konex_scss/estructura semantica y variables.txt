@@ -1,0 +1,59 @@
+h1 = Titulos principales, grandes, Banner, Parallax.
+h2 = Subtitulos, medianos, Titulos de Cards, Secciones
+h3 = Subtitulos, Pequeños, 
+p = Parrafos, Contenido, texto infomativo no titulos.
+p.section-text-small = Para contenido pequeño de card
+
+Nombres de clases segun uso del texto
+1. Nombres:
+    li > a = header-text
+    h1 = banner-title
+    p = banner-text
+    h2 = section-title
+    h3 = section-subtitle
+    p = section-text
+    p = section-text-small
+    button = button-text
+    p, a = footer-title
+    p, a = footer-subtitle
+
+Colores:
+Nombres Basados en Propósito o Función
+
+1. Colores de Fondo:
+--background-primary: Color principal de fondo.
+--background-secondary: Color secundario de fondo.
+--background-tertiary: Color terciario de fondo.
+
+2. Colores de Texto:
+--text-primary: Color principal del texto.
+--text-secondary: Color secundario del texto.
+--text-tertiary: Color terciario del texto.
+
+3. Colores de Bordes:
+--border-primary: Color principal de los bordes.
+--border-secondary: Color secundario de los bordes.
+
+4. Colores de Enlaces:
+--link-default: Color por defecto de los enlaces.
+--link-hover: Color de los enlaces al pasar el ratón.
+--link-visited: Color de los enlaces visitados.
+
+5. Colores de Botones:
+--button-primary-bg: Color de fondo del botón principal.
+--button-secondary-bg: Color de fondo del botón secundario.
+--button-primary-text: Color del texto del botón principal.
+--button-secondary-text: Color del texto del botón secundario.
+
+Nombres Basados en Paleta de Colores
+
+1. Paleta de Colores Neutrales:
+--color-white: Blanco.
+--color-black: Negro.
+--color-gray-light: Gris claro.
+--color-gray-dark: Gris oscuro.
+
+2. Paleta de Colores Primarios y Secundarios:
+--color-primary: Color principal (puede ser un color corporativo o de marca).
+--color-secondary: Color secundario (puede ser un color de apoyo o complemento).
+--color-accent: Color de acento (para resaltar elementos importantes).

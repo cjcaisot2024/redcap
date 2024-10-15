@@ -1,0 +1,5 @@
+{
+    "watch": ["assets"],
+    "ext": "js",
+    "exec": "npm.cmd run docs"
+  }

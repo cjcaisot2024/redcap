@@ -1,0 +1,38 @@
+:root {
+  --slide-backgrounds-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1029" class="none" preserveAspectRatio="none"><path d="M0 0.871094C194.468 148.37 548.258 188.971 1376 137.371C1568.5 125.371 1793 126.371 1920 197.871V1029C1793 957.5 1568.5 956.5 1376 968.5C548.258 1020.1 194.468 979.499 0 832V0.871094Z" fill="black"></path></svg>');
+  --card-image-slime-mask: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="544" height="586" viewBox="0 0 544 586" preserveAspectRatio="none" fill="none"><path d="M277.458 582.043C137.306 613.578 87.4809 400.807 38.9577 314.543C-148.13 4.05817 395.658 -119.747 526.458 145.043C598.815 291.522 433.067 547.031 277.458 582.043Z" fill="black"/></svg>');
+  --banner-parallax-mask: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="none" fill="none" ><path d="M1376 1019.5C548.258 1071.1 194.468 1030.5 0 883V0H1920V1080C1793 1008.5 1568.5 1007.5 1376 1019.5Z" fill="black"/></svg>');
+  --card-title-services: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="301" viewBox="0 0 1920 301" preserveAspectRatio="none" fill="none"><path d="M0 254.5V0L1920 0V300.5C1748.5 207.434 917.895 371.098 0 254.5Z" fill="black"/></svg>');
+  --mask-cover: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="152" height="152" viewBox="0 0 152 152" preserveAspectRatio="none" fill="none"><rect width="152" height="152" fill="black"/></svg>');
+}
+
+.bullet-counter .n2-ss-background-animation,
+.bullet-counter .n2-ss-slide-backgrounds {
+  mask-image: var(--slide-backgrounds-mask);
+  mask-position: 0 0;
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  transition: -webkit-mask-size 2s ease-in-out, mask-size 2s ease-in-out;
+}
+
+svg.banner.parallax {
+  // mask-image: var(--banner-parallax-mask);
+  mask-position: 0 0;
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+
+.card-image .image:not(.cuadrant) {
+  mask-image: var(--card-image-slime-mask);
+  mask-position: 0 0;
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+
+.card-title-services {
+  // mask-image: var(--card-title-services);
+  mask-image: var(--mask-cover);
+  mask-position: 0 0;
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}

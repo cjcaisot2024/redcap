@@ -1,0 +1,77 @@
+.svgDelivery .box {
+  fill: #f2d1a5;
+}
+
+.svg-animate:has(.svg-element):hover .svgDelivery .cover {
+  fill: #c48958;
+  transform: rotateX(60deg);
+  animation: animCover 3s cubic-bezier(0.07, 1.14, 0.93, -0.19) none infinite;
+}
+
+.svg-animate:has(.svg-element):hover .svgDelivery .Flag {
+  fill: #d1d1d6;
+  animation: animFlag 3s linear(0.99 8.82%, 0.82 115.29%) none infinite;
+}
+
+.svg-animate:has(.svg-element):hover .svgDelivery .ok {
+  fill: #00e499;
+  opacity: 0;
+  animation: animOk 3s cubic-bezier(0, 1.3, 1, -0.21) none infinite;
+}
+
+.svgDelivery .check {
+  fill: #d9d9d9;
+}
+
+/* animation */
+.svgDelivery :nth-child(n) {
+  transition: 0.5s;
+}
+
+/* animation */
+@keyframes animOk {
+  0%, 10% {
+    opacity: 0;
+    transform: translate(0rem, 6rem);
+  }
+  25%,
+  95% {
+    opacity: 1;
+    transform: translate(0rem, 0rem);
+  }  
+  100% {
+    opacity: 0;
+    transform: translate(-6rem, -9rem) scale(1.2);
+  }
+}
+
+@keyframes animCover {
+  0%, 5% {
+    transform: rotateX(60deg);
+  }
+  15%,
+  95% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }  
+  100% {
+    transform: rotateX(60deg);
+    opacity: 0;
+  }
+}
+
+@keyframes animFlag {
+    0%, 8% {
+    transform: translateY(-25rem);
+  }
+  15%,
+  95% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-25rem);
+    opacity: 0;
+    
+  }
+}

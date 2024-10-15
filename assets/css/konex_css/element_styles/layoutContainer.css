@@ -1,0 +1,221 @@
+html {
+  margin-top: 0 !important;
+}
+
+body {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.content-wrapper {
+  height: 100vh;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+overlay-backdrop {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 47, 107, 0.6117647059);
+  z-index: 1;
+}
+
+.header-content-box {
+  background: white;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(3, 19, 74, 0.26);
+          box-shadow: 0px 4px 4px 0px rgba(3, 19, 74, 0.26);
+}
+
+[parallaxstate] .header-content-box {
+  position: absolute;
+}
+
+.header-list a {
+  display: block;
+  text-decoration: none;
+  color: #03134a;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+
+.header-content {
+  -webkit-box-shadow: 0px 1px 1px 1px white;
+          box-shadow: 0px 1px 1px 1px white;
+}
+
+.header-content,
+.header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-list {
+  font-family: poppins;
+  list-style: none;
+  margin: 0;
+}
+
+.header-list > li {
+  padding: 0.3rem 1rem;
+  position: relative;
+}
+
+.wrapper:has(.card-title-services) header li#menu-item-33:before,
+.header-list .current-menu-item:before {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #03134a;
+  border-radius: 35px;
+}
+
+.navbar-brand {
+  position: relative;
+  display: block;
+  height: 42px;
+  width: 100%;
+  max-width: 222px;
+}
+
+.navbar-brand > [class*=logo] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.block-header-left {
+  display: contents;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.content-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer-content-box {
+  position: relative;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer-column-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  padding-top: 3em;
+}
+
+.footer-column-content,
+.footer-row-content {
+  background: #03134a;
+  padding: var(--separator-content);
+}
+
+.column-block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-block {
+  padding: 1rem calc(10vw - 10vh);
+  text-align: center;
+  border-top: 1px solid white;
+}
+
+.wp-block-social-links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24px, 1fr));
+  padding: 0;
+  justify-items: center;
+  max-width: 280px;
+}
+
+.wp-block-social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+/*clases para reset*/
+.column-block > :nth-child(n),
+.k-m-0 {
+  margin: 0;
+}
+
+.footer-content-title {
+  font-family: lato;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.wp-block-social-links svg {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-footer {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  width: 100%;
+  max-width: 190px;
+}
+
+header {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+.header-content:has(.navbar-collapse.show) .block-header-left > :nth-child(n) {
+  z-index: 1;
+}
+
+body:has(.parallax):not([parallaxstate]) #headerContent {
+  display: none;
+}/*# sourceMappingURL=layoutContainer.css.map */

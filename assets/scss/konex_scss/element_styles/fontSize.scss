@@ -1,0 +1,344 @@
+:root {
+  /* Títulos Principales (Headings) */
+  // --font-size-h1: 2.5rem; /* Tamaño de fuente para el título principal (H1). */
+  // --font-size-h2: 2rem; /* Tamaño de fuente para el segundo nivel de título (H2). */
+  // --font-size-h3: 1.75rem; /* Tamaño de fuente para el tercer nivel de título (H3). */
+  // --font-size-h4: 1.5rem; /* Tamaño de fuente para el cuarto nivel de título (H4). */
+  // --font-size-h5: 1.25rem; /* Tamaño de fuente para el quinto nivel de título (H5). */
+  // --font-size-h6: 1rem; /* Tamaño de fuente para el sexto nivel de título (H6). */
+
+  /* Subtítulos - Variables Generales */
+  // --font-size-subtitle-lg: 1.5rem; /* Tamaño de fuente para subtítulos grandes. */
+  // --font-size-subtitle-md: 1.25rem; /* Tamaño de fuente para subtítulos medianos. */
+  // --font-size-subtitle-sm: 1rem; /* Tamaño de fuente para subtítulos pequeños. */
+
+  /* Subtítulos - Variables Específicas */
+  // --font-size-main-title: 3rem; /* Para el título principal más importante. */
+  // --font-size-section-title: 2rem; /* Para títulos de sección. */
+  // --font-size-article-title: 1.75rem; /* Para títulos de artículos. */
+  // --font-size-main-subtitle: 2rem; /* Para el subtítulo principal. */
+  // --font-size-section-subtitle: 1.5rem; /* Para subtítulos de sección. */
+  // --font-size-article-subtitle: 1.25rem; /* Para subtítulos de artículos. */
+
+  /* Texto header */
+  --font-size-header: 18px;
+
+  /* Títulos footer */
+  --font-size-footer-title: 1.25rem;
+
+  /* Subtitulo footer */
+  --font-size-footer-subtitle: 1rem;
+
+  /* Títulos de banner */
+  --font-size-banner-title: max(
+    calc(30px + 0.3rem),
+    min(calc(30rem - 1vw), calc(80px - 1.5rem))
+  );
+
+  /* Texto del banner */
+  --font-size-banner-text: max(
+    calc(20px + 0.3rem),
+    min(calc(0.4rem - 0.3vw), calc(29px - 1.5rem))
+  );
+
+  /* Títulos de sección */
+  --font-size-section-title: max(
+    calc(30px + 0.3rem),
+    min(calc(0.4rem - 0.3vw), calc(48px - 1.5rem))
+  );
+
+  /* Subtitulo de sección */
+  --font-size-section-subtitle: 2.3rem;
+
+  /* Texto de sección */
+  --font-size-section-text: max(
+    calc(16px + 0.3rem),
+    min(calc(0.4rem - 0.3vw), calc(24px - 1.5rem))
+  );
+
+  /* Texto de sección para card texto pequeño*/
+  --font-size-section-text-small: max(
+    calc(12px + 0.3rem),
+    min(calc(0.4rem - 0.3vw), calc(18px - 1.5rem))
+  );
+
+  /* Texto de boton */
+  --font-size-button-text: 1.3rem;
+}
+
+/*tipografia*/
+
+@font-face {
+  font-family: "lato";
+  font-style: normal;
+  font-weight: medium;
+  src: url("../../../fonts/lato/Lato-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../../fonts/poppins/Poppins-Bold.ttf") format("truetype"),
+    url("../../../fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: medium;
+  src: url("../../../fonts/poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: light;
+  src: url("../../../fonts/poppins/Poppins-Light.ttf") format("truetype");
+}
+
+/* Aplicar tamaños de fuente */
+
+/* Texto header */
+.header-text {
+  font-family: lato;
+  font-size: var(--font-size-header);
+}
+
+/* Títulos footer */
+.footer-title {
+  font-family: lato;
+  font-size: var(--font-size-footer-title);
+}
+
+/* Subtitulo footer */
+.footer-subtitle {
+  font-family: lato;
+  font-size: var(--font-size-footer-subtitle);
+}
+
+/* Títulos de banner */
+.banner-title {
+  font-size: var(--font-size-banner-title);
+  font-family: poppins;
+}
+
+/* Texto del banner */
+.banner-text {
+  font-family: poppins;
+  font-size: var(--font-size-banner-text);
+}
+
+/* Títulos de sección */
+.section-title {
+  font-family: poppins;
+  font-size: var(--font-size-section-title);
+  text-align: center;
+  color: var(--color-primary);
+}
+
+/* Subtitulo de sección */
+.section-subtitle {
+  font-family: poppins;
+  font-size: var(--font-size-section-subtitle);
+  color: var(--color-primary);
+}
+
+/* Texto de sección */
+.section-text {
+  font-family: poppins;
+  font-size: var(--font-size-section-text);
+  color: var(--color-primary);
+}
+
+/* Texto de sección */
+.section-text-small {
+  font-family: poppins;
+  font-size: var(--font-size-section-text-small);
+  color: var(--color-primary);
+}
+
+/*Texto de botones*/
+.button-text {
+  font-family: poppins;
+  font-size: var(--font-size-button-text);
+}
+
+// tamaños de fuente
+// Definir una lista de tamaños
+// Definir un mapa de tamaños con prefijos
+// $sizes: (
+//     xs: (12, 14, 16),
+//     sm: (18, 20, 22),
+//     md: (24, 30, 32),
+//     lg: (34, 36, 38),
+//     xl: (40, 42, 44),
+//     2xl: (46, 48, 50),
+//     3xl: (52, 54, 58)
+// );
+
+// Generar clases dinámicamente
+// @each $prefix, $size-list in $sizes {
+//     @each $size in $size-list {
+//         .font-#{$prefix}-#{$size} {
+//             font-size: #{$size}px;
+//         }
+//     }
+// }
+
+/* Responsive mobile */
+// @media screen and (max-width: 682px) {
+//   /* Extra pequeño (xs) */
+//   .font-xs-12 {
+//     font-size: 12px;
+//   }
+//   .font-xs-14 {
+//     font-size: 14px;
+//   }
+//   .font-xs-16 {
+//     font-size: 16px;
+//   }
+
+//   /* Pequeño (sm) */
+//   .font-sm-18 {
+//     font-size: 14px;
+//   }
+//   .font-sm-20 {
+//     font-size: 16px;
+//   }
+//   .font-sm-22 {
+//     font-size: 18px;
+//   }
+
+//   /* Mediano (md) */
+//   .font-md-24 {
+//     font-size: 20px;
+//   }
+//   .font-md-30 {
+//     font-size: 30px;
+//   }
+//   .font-md-32 {
+//     font-size: 24px;
+//   }
+
+//   /* Grande (lg) */
+//   .font-lg-34 {
+//     font-size: 34px;
+//   }
+//   .font-lg-36 {
+//     font-size: 36px;
+//   }
+//   .font-lg-38 {
+//     font-size: 24px;
+//   }
+
+//   /* Extra grande (xl) */
+//   .font-xl-40 {
+//     font-size: 40px;
+//   }
+//   .font-xl-42 {
+//     font-size: 42px;
+//   }
+//   .font-xl-44 {
+//     font-size: 44px;
+//   }
+
+//   /* Doble extra grande (2xl) */
+//   .font-2xl-46 {
+//     font-size: 46px;
+//   }
+//   .font-2xl-48 {
+//     font-size: 22px;
+//   }
+//   .font-2xl-50 {
+//     font-size: 50px;
+//   }
+
+//   /* Triple extra grande (3xl) */
+//   .font-3xl-52 {
+//     font-size: 52px;
+//   }
+//   .font-3xl-54 {
+//     font-size: 20px;
+//   }
+//   .font-3xl-58 {
+//     font-size: 22px;
+//   }
+// }
+// clamp(min, adaptable, max)
+/* Extra pequeño (xs) */
+.font-xs-12 {
+  font-size: clamp(1rem, 0.75vw, 0.75rem);
+}
+.font-xs-14 {
+  font-size: clamp(1rem, 0.875vw, 0.875rem);
+}
+.font-xs-16 {
+  font-size: clamp(1rem, 1vw, 1rem);
+}
+
+/* Pequeño (sm) */
+.font-sm-18 {
+  font-size: clamp(1rem, 1.125vw, 1.125rem);
+}
+.font-sm-20 {
+  font-size: clamp(1rem, 1.250vw, 1.250rem);
+}
+.font-sm-22 {
+  font-size: clamp(1rem, 1.375vw, 1.375rem);
+}
+
+/* Mediano (md) */
+.font-md-24 {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+.font-md-30 {
+  font-size: clamp(1rem, 1.875vw, 1.875rem);
+}
+.font-md-32 {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+/* Grande (lg) */
+.font-lg-34 {
+  font-size: clamp(1.125rem, 2.125vw, 2.125rem);
+}
+.font-lg-36 {
+  font-size: clamp(1.250rem, 2.250vw, 2.250rem);
+}
+.font-lg-38 {
+  font-size: clamp(1.375rem, 2.375vw, 2.375rem);
+}
+
+/* Extra grande (xl) */
+.font-xl-40 {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+}
+.font-xl-42 {
+  font-size: clamp(1.625rem, 2.625vw, 2.625rem);
+}
+.font-xl-44 {
+  font-size: clamp(1.75rem, 2.75vw, 2.75rem);
+}
+
+/* Doble extra grande (2xl) */
+.font-2xl-46 {
+  font-size: clamp(1.875rem, 2.875vw, 2.875rem);
+}
+.font-2xl-48 {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+.font-2xl-50 {
+  font-size: clamp(2.125rem, 3.125vw, 3.125rem);
+}
+
+/* Triple extra grande (3xl) */
+.font-3xl-52 {
+  font-size: clamp(2.25rem, 3.25vw, 3.25rem);
+}
+.font-3xl-54 {
+  font-size: clamp(2.375rem, 3.375vw, 3.375rem);
+}
+.font-3xl-58 {
+  font-size: clamp(2.625rem, 3.625vw, 3.625rem);
+}

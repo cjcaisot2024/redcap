@@ -1,0 +1,99 @@
+__Estructura del proyecto web__
+
+theme_konex_web/
+├── 404.php
+├── archive.php
+├── assets/
+│   ├── fonts/
+│   │   └── lato
+│   │   └── poppins
+│   ├── css/
+│   │   └── konex_css
+│   │   │   └── element_styles <-Se debe compilar los estilos de sass
+│   │   │   └── svg_styles <- Css directo ligero
+│   │   │   └── theme.css <- Orden de importacion de css
+│   ├── scss/ 
+│   │   └── konex_scss
+│   │   │   └── element_styles <- Compilado Live Sass Compiler => glenn2223.live-sass
+│   ├── uploads/
+│   │   └── images
+│   │   └── svgImages
+│   │   └── svgText <- SVG Minifycados con => jock.svg
+│   ├── js/
+│   │   └── app.js <- Editable
+│   │   └── app.min.js <- Generado con Minify => HookyQR.minify
+│   │   └── form.js <- Editable
+│   │   └── form.min.js <- Generado con Minify => HookyQR.minify
+│   │   └── html-include.js <- Editable
+│   │   └── html-include.min.js <- Generado con Minify => HookyQR.minify
+│   └── html/
+│       ├── home.html <- Inicio
+│       └── services.html <- Servicios
+│       │   └── technology-consulting.html <- Consultoría tecnológica
+│       │   └── customized-software.html <- Software a la medida
+│       │   └── systems-integration.html <- Integración de sistemas
+│       │   └── automated-processes.html <-Procesos Automatizados
+│       │   └── user-experience-design.html <- Diseño de experiencia de usuario
+│       │   └── visual-design.html <- Diseño visual
+│       └── our-work.html <- Nuestro Trabajo
+│           └── gelsa.html
+│           └── logii.html
+│           └── onj.html
+│           └── powwi.html
+│       ├── about.html <- Nosotros
+│       ├── contact.html <- Cntactanos
+├── template-parts
+│   └── content-paginacion.php
+│   └── navbar.php
+├── comments.php
+├── footer.php
+├── functions.php
+├── header.php
+├── index.php
+├── page-about.php
+├── page-contact.php
+├── page-services.php
+├── screenshot.png
+├── single.php
+└── style.css
+
+
+__ShortCodes de wordpress__
+
+[cargar_html archivo="assets/html/home.html"]
+
+[cargar_html archivo="assets/html/services.html"]
+[cargar_html archivo="assets/html/services/automated-processes.html"]
+[cargar_html archivo="assets/html/services/customized-software.html"]
+[cargar_html archivo="assets/html/services/systems-integration.html"]
+[cargar_html archivo="assets/html/services/technology-consulting.html"]
+[cargar_html archivo="assets/html/services/user-experience-design.html"]
+[cargar_html archivo="assets/html/services/visual-design.html"]
+
+[cargar_html archivo="assets/html/our-work.html"]
+[cargar_html archivo="assets/html/our-work/gelsa.html"]
+[cargar_html archivo="assets/html/our-work/logii.html"]
+[cargar_html archivo="assets/html/our-work/onj.html"]
+[cargar_html archivo="assets/html/our-work/powwi.html"]
+
+[cargar_html archivo="assets/html/about.html"]
+
+[cargar_html archivo="assets/html/contact.html"]
+
+
+
+/** 
+
+*/
+// "description": "",
+//   "main": "",
+//   "script": {
+//     "test": "echo \"Error: no test specified\" && exit 1",
+//     "docs": "jsdoc -c jsdoc.json"
+//   },
+//   "keywords": [],
+//   "author": "",
+//   "license": "ISC",
+//   "dependencies": {
+//     "jsdoc": "^3.6.6"
+//   }

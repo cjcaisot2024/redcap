@@ -1,0 +1,21 @@
+:root {
+  --svg-image-stars: url(../../../uploads/svgImage/stars.svg);
+  --svg-image-polygons: url(../../../uploads/svgImage/polygons.svg);
+}
+
+.svg-element {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.svg-element > svg {
+  position: absolute;
+  width: auto;
+  height: 64px;
+}
+
+.svg-animate:has(.svg-element):not(:hover) .svg-element > svg {
+  display: none;
+}/*# sourceMappingURL=svgImage.css.map */
